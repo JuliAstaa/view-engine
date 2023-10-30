@@ -1,0 +1,24 @@
+<h1 class="text-center">INI ADLALAH HALAMAN DATA BUKU EJS</h1>
+<div class="d-flex justify-content-center align-items-center w-100 vh-100">
+  <div class="d-flex flex-row flex-wrap justify-content-between">
+    <% data.forEach(dataBuku => { %>
+    <div class="card mb-4" style="width: 22rem">
+      <div class="card-body">
+        <h5 class="card-title text-center"><%= dataBuku.judul_buku %></h5>
+        <p class="card-text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          quasi aliquid id aut accusantium tenetur cupiditate quos, magnam
+          voluptate animi repellendus doloribus dignissimos voluptates nemo amet
+          praesentium quidem cumque dolorum!
+        </p>
+        <p class="card-text text-center">
+          <small class="text-muted"
+            ><%= dataBuku.nama_pengarang %> || <%= dataBuku.tahun_terbit
+            %></small
+          >
+        </p>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+</div>
